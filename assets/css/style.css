@@ -64,6 +64,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -688,9 +692,8 @@ img {
 .prices .swiper{
   width: 320px;
   overflow: initial;
-  padding-block: 2rem 5rem;
-
 }
+
 
 .prices :is(.swiper-slide-next, .swiper-slide-prev){
   opacity: .0;
@@ -744,7 +747,7 @@ img {
    }
 .gallery__container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 500px));
   grid-template-areas:
     "img-1 img-1"
     "img-2 img-3"
@@ -868,7 +871,7 @@ img {
   transition: color .4s;
 }
 
-footer__logo i{
+.footer__logo i{
   font-weight: initial;
   font-size: 2rem;
   color: var(--first-color);
@@ -1016,7 +1019,7 @@ footer__logo i{
 
   .gallery__container{
     display: grid;
-    grid-template-columns: repeat(2, 190px);
+    grid-template-columns: repeat(2, minmax(0, 190px));
     justify-content: center;
     gap: 1.5rem;
   }
@@ -1099,7 +1102,7 @@ footer__logo i{
   }
 
   .contact__container{
-    grid-template-columns: repeat(2, 350x);
+    grid-template-columns: repeat(2, 350px);
     align-items: center;
   }
 
