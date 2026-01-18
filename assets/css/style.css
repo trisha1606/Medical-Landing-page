@@ -420,6 +420,7 @@ img {
   display: grid;
   row-gap: 3rem;
   align-items: center;
+  justify-items: center;
 }
 
 .delivery__data{
@@ -1026,11 +1027,16 @@ img {
 }
 
 @media screen and (min-width: 768px){
+  
   .home__container{
     grid-template-columns: repeat(2, 350px);
     row-gap: 2rem;
   }
-
+  
+  .home__content{
+    justify-items: center;
+  }
+  
   .home__data{
     grid-column: 2 / 3;
     text-align: initial;
@@ -1345,7 +1351,7 @@ img {
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-@media  screen and (main-width: 2048px) {
+@media  screen and (min-width: 2048px) {
   body{
     zoom: 1.2;
   }

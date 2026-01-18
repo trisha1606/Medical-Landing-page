@@ -62,7 +62,7 @@ const swiperPrices = new Swiper('.prices__swiper', {
 const scrollup = () =>{
   const scrollup = document.getElementById('scrollup')
     //when the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-  this.scrolly >= 350 ? scrollup.classList.add('show-scroll')
+  window.scrollY >= 350 ? scrollup.classList.add('show-scroll')
           :scrollup.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollup)
